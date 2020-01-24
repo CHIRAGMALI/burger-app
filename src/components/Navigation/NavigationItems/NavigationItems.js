@@ -5,8 +5,8 @@ import './NavigationItems.css'
 const NavigationItems = () => {
     return (
         <ul className='NavigationItems'>
-            <NavigationItem link='/' active={true}>Burger Builder</NavigationItem>
-            <NavigationItem link='/' active={false}>Checkout</NavigationItem>
+            <NavigationItem link='/' exact={true}>Burger Builder</NavigationItem>
+            <NavigationItem link='/orders'>Checkout</NavigationItem>
         </ul>
     )
 }

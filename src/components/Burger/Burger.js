@@ -3,7 +3,7 @@ import classes from './Burger.module.css';
 import Ingredient from './Ingredient/Ingredient';
 
 
-const burger = (props) => {
+const Burger = (props) => {
     let transformedIngredient = Object.keys(props.ingredients)
         .map(igKey => {
             return [...Array(props.ingredients[igKey])].map((_, index) => {
@@ -25,5 +25,5 @@ const burger = (props) => {
     )
 }
 
-export default burger;
+export default Burger;
 
